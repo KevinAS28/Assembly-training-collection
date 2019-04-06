@@ -1,0 +1,17 @@
+nasm -f elf {}.asm && ld {}.o -o {}.out -m elf_i386 && ./{}.out
+
+
+nasm -f elf64 {}.asm && ld {}.o -o {}.out && ./{}.out
+
+
+nasm -g -f elf64 {}.asm && ld {}.o -o {}.out && ./{}.out
+
+
+python {}.py
+
+
+gcc {}.c -o {}.o && ./{}.o
+
+
+gcc -S {}.c -o {}.asm
+

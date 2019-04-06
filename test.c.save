@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+ char a[] = "123";
+ char b[3];
+ b = {'1', '2', '3'o
+};
+ if (b==a)
+ {
+  printf("success\n");
+ }
+ else{
+  printf("failed\n");
+ }
+ return 0;
+}
